@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>LOGIN</title>
+  </head>
+  <body>
+    <main class="container">
+      <form class="form" name="login" novalidate>
+        <header class="form_header">
+          <img
+            class="form_logo"
+            src="images/logo.svg"
+            alt="ZoneTech"
+            role="img"
+            width="180"
+            height="29"
+          />
+        </header>
+        <fieldset class="form_group-container">
+          <legend class="form_title">Login</legend>
+          <div class="form_group">
+            <label class="form_label" for="email"
+              >Email<span aria-label="required">*</span></label
+            ><input
+              class="form_control form_email"
+              type="email"
+              name="email"
+              autocomplete="email"
+              placeholder="username@gmail.com"
+              aria-describedby="email-invalid"
+              required
+            /><span
+              class="form_invalid"
+              id="email-invalid"
+              aria-live="assertive"
+            ></span>
+          </div>
+          <div class="form_group">
+            <label class="form_label" for="password"
+              >Password<span aria-label="required">*</span></label
+            ><input
+              class="form_control form_password"
+              type="password"
+              name="password"
+              autocomplete="current-password"
+              placeholder="password"
+              aria-describedby="password-invalid"
+              required
+            /><span
+              class="form_invalid"
+              id="password-invalid"
+              aria-live="assertive"
+            ></span>
+          </div>
+          <a class="form_forgot-password-link" href="forgotPassword.html"
+            >Forgot Password?</a
+          >
+          <input class="button" type="submit" name="submit" value="Sign in" />
+        </fieldset>
+        <footer class="form_footer">
+          <p class="form_company-text">or continue with</p>
+          <div class="form_company-login">
+            <a class="form_google-login-link form_icon" href="#"
+              ><img
+                src="images/google.svg"
+                alt="google"
+                role="img"
+                width="17.08"
+                height="17.08" /></a
+            ><a class="form_github-login-link form_icon" href="#"
+              ><img
+                src="images/github.svg"
+                alt="github"
+                role="img"
+                width="17.08"
+                height="17.08" /></a
+            ><a class="form_facebook-login-link form_icon" href="#"
+              ><img
+                src="images/facebook.svg"
+                alt="facebook"
+                role="img"
+                width="17.08"
+                height="17.08"
+            /></a>
+          </div>
+          <p class="form_register-text">
+            Don't have an account yet?
+            <a class="form_register-link" href="register.html"
+              >Register for free</a
+            >
+          </p>
+        </footer>
+      </form>
+    </main>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

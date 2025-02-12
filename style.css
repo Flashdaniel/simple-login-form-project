@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  display: grid;
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  font-family: "Roboto", serif;
+  font-size: 1.3rem;
+  background-image: url(images/background3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  padding: 11rem;
+}
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+p,
+label,
+a {
+  opacity: 0.8;
+}
+
+.container {
+  padding-block: 8%;
+  display: grid;
+  place-items: center;
+  width: 80%;
+  background: rgba(0, 52, 101, 0.3);
+  border-radius: 24px;
+}
+
+.form {
+  max-inline-size: 41rem;
+  width: 100%;
+  background-color: rgba(88, 130, 193, 0.28);
+  border-radius: 28.46px;
+  padding: 4rem 8rem;
+}
+
+.form_header {
+  height: 3rem;
+  margin-block-end: 4rem;
+}
+
+.form_logo {
+  display: block;
+  max-inline-size: 10.5rem;
+  block-size: auto;
+  width: 100%;
+  margin: auto;
+}
+
+.form_group-container {
+  border: none;
+  padding-block-start: 2.4rem;
+}
+
+.form_title {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.form_group {
+  display: grid;
+  gap: 1rem;
+  margin-block-end: 1rem;
+}
+
+.form_group:last-of-type {
+  margin: 0px;
+}
+
+.form_control {
+  padding: 0.8rem 1.6rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.form_control:focus-visible {
+  outline: 2px solid #003465;
+}
+
+.form_control:user-invalid {
+  outline: 2px solid #ff0000;
+}
+
+.form_forgot-password-link {
+  display: block;
+  margin-block-start: 1rem;
+}
+
+.form_invalid {
+  display: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 5px;
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+.button {
+  display: block;
+  font-weight: 400;
+  width: 100%;
+  margin-block-start: 2.4rem;
+  background-color: #003465;
+  color: #ffffff;
+  border: none;
+  border-radius: 7.11px;
+  padding: 0.8rem 1.6rem;
+  min-width: fit-content;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus-visible {
+  background-color: rgba(0, 52, 101, 0.909);
+}
+
+.button:active {
+  background-color: rgba(0, 52, 101, 0.806);
+}
+
+.form_company-text {
+  margin-block: 2.4rem;
+  text-align: center;
+}
+
+.form_company-login {
+  display: flex;
+  gap: 1.7rem;
+}
+
+.form_icon {
+  display: block;
+  text-align: center;
+  flex: 1;
+  background-color: #ffffff;
+  padding: 0.9rem 1.4rem;
+  border-radius: 7.11px;
+}
+
+.form_icon:hover,
+.form_icon:focus-visible {
+  opacity: 0.7;
+}
+
+.form_register-text {
+  margin-block: 2.4rem 0;
+  font-size: 0.996rem;
+  text-align: center;
+}
+
+.form_register-text a {
+  opacity: 1;
+  font-weight: 500;
+}
+
+.form_register-text a:hover,
+.form_register-text a:focus-visible,
+.form_forgot-password-link:hover,
+.form_forgot-password-link:focus {
+  text-decoration: underline;
+}
+
+@media (max-width: 45em) {
+  .form {
+    padding-inline: 2rem;
+  }
+
+  .container {
+    width: auto;
+    background-color: transparent;
+  }
+
+  body {
+    padding: 2rem;
+    justify-items: stretch;
+    /* align-items: center; */
+  }
+}
